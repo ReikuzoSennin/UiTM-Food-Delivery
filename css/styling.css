@@ -1,0 +1,397 @@
+* { box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ }
+
+*::-webkit-scrollbar {display: none;}
+
+html,
+body {  height: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Lora', serif; }
+  
+h1,h2,h3,h4,h5,h6 { font-family: 'Candal', serif;
+                    color: #5c5b5b;
+                    margin: 5px; }
+  
+a {     
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* Navbar */
+header {width: 100%; height: 80px;}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em; }
+
+.logo-text {
+    margin: 6px;
+    font-family: 'Candal', serif;
+    display: inline-block; }
+
+.logo-text span {color: #5b266b;}
+
+header .logo-img {width: 40;height: 70px;}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+
+.showing {max-height: 100em;}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 160px;
+    display: none;
+    z-index: 88888;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: #444;
+    z-index: 88888;
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li a .arrow-down {
+    font-size: .8em;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-top: 1px solid grey;
+}
+
+header ul li a:hover {
+    background: #d1d1d1;
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+/* Content */
+.content {
+    width: 60%;
+    margin: 80px auto 10px;
+    min-height: calc(100vh - 220px);
+}
+
+.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.content ul li a {
+    display: block;
+    padding: 0px;
+    color: black;
+}
+
+.img-text {
+    text-align: center;
+    margin: 0 30px 30px 0;
+}
+
+.img-text img{
+    display: block;
+    margin: auto;
+}
+
+.shop {
+    border:1px solid #333; 
+    background-color:#f1f1f1; 
+    border-radius:5px; 
+    padding:16px; 
+    flex:1;
+    justify-content: center;
+}
+
+
+/* AUTH PAGES */
+
+.auth-content {
+    width: 30%;
+    margin: 80px auto 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    min-height: calc(100vh - 220px);
+}
+  
+.auth-content .form-title {
+    text-align: center;
+}
+  
+.auth-content form div {
+    margin-bottom: 10px;
+}
+  
+.auth-content form p {
+    text-align: center;
+}
+  
+.auth-content form p a {
+    text-decoration: underline;
+}
+
+/* About Us */
+.contact .contact-content {
+    height: 350px;
+    display: flex;
+    border: 1px solid transparent;
+    color: black;
+    min-height: calc(100vh - 220px);
+    margin: 80px auto 10px;
+}
+
+.contact .contact-content .contact-section {
+    flex: 1;
+    padding: 25px;
+}
+
+.contact .contact-content .about h1 span {
+    color: #5b266b;
+}
+
+.contact .contact-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.contact .contact-content .about .socials a {
+    border: 1px solid black;
+    width: 43px;
+    height: 34px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.contact .contact-content .about .socials a:hover {
+    color: #201d71;
+    border: 1px solid #201d71;
+    transition: all .3s;
+}
+
+.contact .contact-content .contact-form .contact-input {
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .7rem 1.4rem;
+    border: none;
+}
+
+.contact .contact-content .contact-form .contact-btn {
+    float: right;
+    font-family: 'Lora', serif;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.btn-big {
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+}
+
+.text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: #444;
+    line-height: 1.5rem;
+    font-size: 1em;
+    font-family: 'Lora', serif;
+}
+
+.msg {
+    width: 100%;
+    color: #6062ca;
+    background: #201cf3;
+    border: 1px solid #1100ff;
+    margin-bottom: 20px;
+}
+  
+.success {
+    margin: 0px auto; 
+    padding: 10px; 
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    border-radius: 5px; 
+    text-align: left;
+    background: #bcf5bc;
+    margin-bottom: 20px;
+}
+  
+.error {
+    margin: 0px auto; 
+    padding: 10px; 
+    color: #a94442;
+    border: 1px solid #ff0400;
+    border-radius: 5px; 
+    text-align: left;
+    background: #f2dede;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Specifics */
+#copyright{
+    position: relative;
+    top: 25px;
+}
+
+#shopping-cart {
+    margin: 40px;
+}
+
+#product-grid {
+    margin: 40px;
+}
+
+#market button {
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+	flex-shrink: 0;
+    width: 100%;
+}
+
+footer .footer-bottom {
+	background: #201d71;
+	color: white;
+	height: 50px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1114px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+    }
+    .content table{
+        font-size: .7rem;
+    }
+    .btn {
+        padding: .5rem .5rem;
+    }
+    .btn-big {
+        padding: .7rem .7rem;
+    }
+    .auth-content {
+        width: 50%;
+    }
+    .contact {
+        height: auto;
+    }
+    .contact .contact-content {
+        height: auto;
+        flex-direction: column;
+    }
+    .contact .contact-content .contact-form{
+        padding-bottom: 90px;
+    }
+    .contact .contact-content .contact-form .contact-btn{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    header {
+        position: relative;
+    }
+    .auth-content {
+        width: 60%;
+    }
+    header ul {
+        width: 100%;
+        max-height: 0px;
+        background: white;
+        overflow: hidden;
+    }
+    .showing {
+        max-height: 100em;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    header ul li ul li a {
+        padding: 10px;
+        background: white;
+        padding-left: 50px;
+    }
+    header ul li ul li a:hover {
+        background: #d1d1d1;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top:  20px;
+        font-size: 1.9em;
+    }
+    header .logo {
+        margin-left: .5em;
+    }
+    header .logo-text {
+        font-size: 1.3em;
+    }
+}
